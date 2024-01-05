@@ -1,0 +1,15 @@
+.e-scoll-a {
+  overflow: hidden;
+  height: 20vh;
+  width: 30vw;
+}
+
+.e-scoll-a li {
+  height: 3vh;
+  background-color: rgb(5, 50, 109);
+  margin-bottom: 1vh;
+}
+
+.e-scoll-a li:hover {
+  background-color: rgb(8, 71, 153);
+}

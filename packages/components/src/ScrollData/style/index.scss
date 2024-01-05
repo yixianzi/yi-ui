@@ -1,0 +1,14 @@
+.yi-scoll-a {
+  overflow: hidden;
+  height: 20vh;
+  width: 30vw;
+}
+.yi-scoll-a li {
+  height: 3vh;
+  background-color: rgb(5, 50, 109);
+  margin-bottom: 1vh;
+  color: #fff;
+}
+.yi-scoll-a li:hover {
+  background-color: rgb(8, 71, 153);
+}
