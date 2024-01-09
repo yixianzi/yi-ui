@@ -71,6 +71,20 @@ export declare interface InputProps {
     disabled?: boolean;
 }
 
+/**
+ * 定义props类型
+ */
+export declare interface ScrollDataProps {
+    data: Array<any>;
+    header: Array<{
+        name: string;
+        prop: string;
+        width?: number;
+    }>;
+    rowHeight?: number;
+    tableHeight?: number;
+}
+
 declare type SFCWithInstall<T> = T & Plugin_2;
 
 export declare const YiInput: SFCWithInstall<DefineComponent<{
@@ -104,8 +118,53 @@ export declare const YiInput: SFCWithInstall<DefineComponent<{
     disabled: boolean;
 }, {}>> & Record<string, any>;
 
-export declare const YiScrollData: SFCWithInstall<DefineComponent<{}, {
+export declare const YiScrollData: SFCWithInstall<DefineComponent<{
+    data: {
+        type: PropType<any[]>;
+        required: true;
+    };
+    header: {
+        type: PropType<{
+            name: string;
+            prop: string;
+            width?: number | undefined;
+        }[]>;
+        required: true;
+    };
+    rowHeight: {
+        type: PropType<number>;
+        default: number;
+    };
+    tableHeight: {
+        type: PropType<number>;
+        default: number;
+    };
+}, {
     focus: typeof focus;
-}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<{}>>, {}, {}>> & Record<string, any>;
+}, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<{
+    data: {
+        type: PropType<any[]>;
+        required: true;
+    };
+    header: {
+        type: PropType<{
+            name: string;
+            prop: string;
+            width?: number | undefined;
+        }[]>;
+        required: true;
+    };
+    rowHeight: {
+        type: PropType<number>;
+        default: number;
+    };
+    tableHeight: {
+        type: PropType<number>;
+        default: number;
+    };
+}>>, {
+    rowHeight: number;
+    tableHeight: number;
+}, {}>> & Record<string, any>;
 
 export { }

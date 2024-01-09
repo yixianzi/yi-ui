@@ -5,7 +5,13 @@ import ScrollData from "./ScrollData.vue";
  */
 export interface ScrollDataProps {
   data: Array<any>;
-  header: Array<{ name: string; prop: string; width?: number }>;
+  header: Array<{
+    name: string;
+    prop: string;
+    width?: number;
+  }>;
+  rowHeight?: number;
+  tableHeight?: number;
 }
 
 // /**

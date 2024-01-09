@@ -16,13 +16,13 @@ const state = ref("");
 const inputRef = ref<InputInstance>();
 const data = ref<any[]>([]);
 const scrollHeader = ref([
-  { name: "id", prop: "id", width: 10 },
-  { name: "事件ID", prop: "eventId", width: 10 },
-  { name: "mainType", prop: "mainType", width: 10 },
-  { name: "subType", prop: "subType", width: 10 },
-  { name: "createdTime", prop: "createdTime", width: 10 },
-  { name: "srcArea", prop: "srcArea", width: 10 },
-  { name: "dstArea", prop: "dstArea", width: 10 },
+  { name: "id", prop: "id" },
+  { name: "事件ID", prop: "eventId", width: 200 },
+  { name: "mainType", prop: "mainType" },
+  { name: "subType", prop: "subType" },
+  { name: "createdTime", prop: "createdTime" },
+  { name: "srcArea", prop: "srcArea" },
+  { name: "dstArea", prop: "dstArea" },
 ]);
 onMounted(() => {
   data.value = mockScrollData;

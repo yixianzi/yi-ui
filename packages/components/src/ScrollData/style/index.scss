@@ -1,14 +1,43 @@
 .yi-scoll-a {
   overflow: hidden;
-  height: 20vh;
-  width: 30vw;
 }
-.yi-scoll-a li {
-  height: 3vh;
-  background-color: rgb(5, 50, 109);
-  margin-bottom: 1vh;
-  color: #fff;
-}
+
 .yi-scoll-a li:hover {
   background-color: rgb(8, 71, 153);
+}
+
+.yi-scroll {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .scroll-li {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 50, 109);
+    margin-bottom: 2px;
+    color: #fff;
+    align-items: center;
+    .li-span {
+      display: block;
+      width: 100px;
+      overflow: hidden;
+      text-align: center;
+      text-overflow: ellipsis;
+      flex: 1;
+    }
+  }
+
+    .header {
+      // background-color: #fff;
+      // font-size: 20px;
+      font-weight: 800;
+      .li-span {
+        line-height: 30px;
+        text-overflow: inherit;
+        overflow-wrap: anywhere;
+      }
+    }
+
+
 }
