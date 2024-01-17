@@ -1,10 +1,10 @@
-declare module 'vue' {
+declare module "vue" {
   export interface GlobalComponents {
-    GieInput: typeof import('@yixianzi/components')['YiInput']
+    YiInput: typeof import("@yixianzi/components")["YiInput"];
+    YiScrollData: typeof import("@yixianzi/components")["YiScrollData"];
   }
 
-  interface ComponentCustomProperties {
-  }
+  interface ComponentCustomProperties {}
 }
 
-export {}
+export {};
